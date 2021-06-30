@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  app:
+    image: "python:3.9.6-alpine"
+    container_name: "multiply_query"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: "tail -f /dev/null"
+    stdin_open: true
+    tty: true
